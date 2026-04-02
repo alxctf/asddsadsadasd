@@ -1,0 +1,14 @@
+1;A123AA123;Лада;Веста
+2;B456BB456;Toyota;Camry
+3;C789CC789;Kia;Rio
+4;D111DD111;;Solaris
+5;E222EE222;Volkswagen;
+6;F333FF333;Skoda;Octavia
+7;G444GG444;Renault;Logan
+8;H555HH555;BMW;X5
+9;K666KK666;Mercedes-Benz;
+10;M777MM777;Ауди;Q5
+11;N888NN888;;
+12;P999PP999;Kia;Sportage
+13;Q000QQ000;Lada;Granta
+14;R111RR111;;Vesta
