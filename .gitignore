@@ -1,0 +1,11 @@
+# Build artifacts
+program.exe
+*.o
+*.obj
+*.exe
+
+# Generated at build time from registrations.txt (see Makefile)
+regs.txt
+
+# Program output
+result.txt
