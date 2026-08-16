@@ -1,0 +1,4 @@
+{
+  "name": "car-registry-cpp",
+  "install": "bash .cursor/install.sh"
+}
