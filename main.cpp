@@ -10,8 +10,10 @@
 #include "debug.h"                                  // Подключаем отладку
 #include <vector>                                   // Для std::vector
 #include <cstdio>                                   // Для printf, scanf, getchar
-#include <windows.h>                                // Для SetConsoleCP и SetConsoleOutputCP
 #include <locale.h>                                 // Для setlocale
+#ifdef _WIN32
+#include <windows.h>                                // Для SetConsoleCP и SetConsoleOutputCP (только Windows)
+#endif
 
 // Вспомогательная функция: получает корректный выбор пользователя
 // Защищает от ввода неправильных чисел
@@ -28,9 +30,11 @@ int get_valid_choice(int min, int max) {
 
 int main()                                          // Главная функция программы
 {
-    setlocale(LC_ALL, "Russian");                   // Устанавливаем русскую локаль
-    SetConsoleCP(1251);                             // Устанавливаем кодовую страницу для ввода
-    SetConsoleOutputCP(1251);                       // Устанавливаем кодовую страницу для вывода
+    setlocale(LC_ALL, "");                          // Берём локаль из окружения (UTF-8 в Linux)
+#ifdef _WIN32
+    SetConsoleCP(CP_UTF8);                           // Кодовая страница ввода UTF-8 (исходники в UTF-8)
+    SetConsoleOutputCP(CP_UTF8);                     // Кодовая страница вывода UTF-8
+#endif
 
     std::vector<Car> cars;                          // Вектор для хранения автомобилей
     std::vector<Registration> regs;                 // Вектор для хранения регистраций

@@ -1,0 +1,7 @@
+# Build artifacts
+*.o
+carsearch
+carsearch.exe
+
+# Program output
+result.txt
