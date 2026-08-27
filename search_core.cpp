@@ -6,6 +6,11 @@
 #include <cstdio>                                   // Для printf и fprintf
 #include <cstring>                                  // Для strlen, strcmp и т.д.
 
+#ifndef _WIN32
+#include <strings.h>                                // Для strcasecmp (POSIX)
+#define _stricmp strcasecmp                          // На Linux/macOS _stricmp = strcasecmp
+#endif
+
 namespace SearchCore {                              // Общие функции поиска и печати
 
     // Вывод одной записи на экран (используется в режиме поиска)
