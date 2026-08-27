@@ -1,9 +1,5 @@
 {
   "name": "Avto — Car Registration Search (C++ / Windows via Wine)",
   "user": "ubuntu",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "context": "."
-  },
   "install": "bash .cursor/install.sh"
 }
