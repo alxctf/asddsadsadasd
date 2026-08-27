@@ -1,0 +1,8 @@
+# Build artifact (produced by .cursor/install.sh)
+avto.exe
+
+# Program output (mode 2 export)
+result.txt
+
+# Runtime data alias created by install.sh from registrations.txt
+regs.txt
