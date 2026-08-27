@@ -11,7 +11,7 @@ namespace Text {                             // Все текстовые стр
 	const char* const ERR_CREATE_FILE = "ошибка создания файла %s\n"; // Сообщение об ошибке при создании файла
 
     const char* const FILE_CARS = "cars.txt";     // Файл с данными об автомобилях
-    const char* const FILE_REGS = "regs.txt";     // Файл с данными о регистрации
+    const char* const FILE_REGS = "registrations.txt"; // Файл с данными о регистрации
     const char* const FILE_RESULT = "result.txt";   // Файл для сохранения полного отчёта
 
     // Основные сообщения для пользователя
